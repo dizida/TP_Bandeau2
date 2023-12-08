@@ -19,9 +19,18 @@ public class ExempleDUtilisation2 {
         Color fore = monBandeau2.getForeground();
 
 
-        monBandeau2.setMessage("Hello");
+        monBandeau2.setMessage("Hello Sara");
 
-        EffetClignotant e = new EffetClignotant(500);
+        EffetClignotant ec = new EffetClignotant(500);
         EffetRotation er = new EffetRotation();
+        EffetZoom ez = new EffetZoom();
+
+        ScenarioAnimation scenario = new ScenarioAnimation();
+        scenario.addEffect(ec, 3);
+        scenario.addEffect(er, 3);
+        scenario.addEffect(ez, 3);
+
+        scenario.appliquer(monBandeau2);
+        monBandeau2.close();
     }
 }

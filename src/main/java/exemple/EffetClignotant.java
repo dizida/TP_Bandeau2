@@ -19,6 +19,10 @@ public class EffetClignotant extends Effet{
         bandeau.sleep(delai);
         bandeau.setForeground(Color.BLACK);
         bandeau.sleep(delai);
+        bandeau.setForeground(Color.PINK);
+        bandeau.sleep(delai);
+        bandeau.setForeground(Color.magenta);
+        bandeau.sleep(delai);
 }
 }
 
